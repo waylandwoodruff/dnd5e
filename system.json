@@ -1,15 +1,15 @@
 {
-  "id": "dnd5e",
-  "title": "DnD5e - Fifth Edition System",
+  "id": "dnd5w",
+  "title": "DnD5w - Fifth Edition House Ruled System",
   "description": "A system for playing the fifth edition of the worlds most popular role-playing game in the Foundry Virtual Tabletop environment.",
   "version": "2.1.5",
   "compatibility": {
     "minimum": "10.291",
     "verified": "10"
   },
-  "url": "https://github.com/foundryvtt/dnd5e/",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-  "download": "https://github.com/foundryvtt/dnd5e/releases/download/release-2.1.5/dnd5e-release-2.1.5.zip",
+  "url": "https://github.com/waylandwoodruff/dnd5e/",
+  "manifest": "https://raw.githubusercontent.com/waylandwoodruff/dnd5e/intrigue-and-alliance-hr/system.json",
+  "download": "https://github.com/waylandwoodruff/dnd5e/releases/download/test/dnd5e-release-2.1.5.zip",
   "authors": [
     {
       "name": "Atropos",

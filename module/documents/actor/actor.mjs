@@ -607,6 +607,7 @@ export default class Actor5e extends Actor {
     const hp = this.system.attributes.hp;
 
     const abilityId = CONFIG.DND5E.hitPointsAbility || "con";
+    const abilityScore = (this.system.abilities[abilityId]?.value ?? 0);
     const abilityMod = (this.system.abilities[abilityId]?.mod ?? 0);
     const base = Object.values(this.classes).reduce((total, item) => {
       const advancement = item.advancement.byType.HitPoints?.[0];
@@ -615,7 +616,7 @@ export default class Actor5e extends Actor {
     const levelBonus = simplifyBonus(hp.bonuses.level, rollData) * this.system.details.level;
     const overallBonus = simplifyBonus(hp.bonuses.overall, rollData);
 
-    hp.max = base + levelBonus + overallBonus;
+    hp.max = base + levelBonus + overallBonus + abilityScore;
   }
 
   /* -------------------------------------------- */
